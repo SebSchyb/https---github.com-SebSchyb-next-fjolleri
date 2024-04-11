@@ -6,7 +6,11 @@ export default function Footer() {
       <ul>
         <li>
           <Link href={"/"}>spænende link</Link>
+        </li>
+        <li>
           <Link href={"/"}>spænende link</Link>
+        </li>
+        <li>
           <Link href={"/"}>spænende link</Link>
         </li>
       </ul>

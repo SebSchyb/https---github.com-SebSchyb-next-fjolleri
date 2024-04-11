@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 async function getHenry() {
   const res = await fetch("https://nice-dogs.vercel.app/api/dogs?slug=henry");
   const data = await res.json();
@@ -20,6 +22,17 @@ export default async function HenryPage() {
   return (
     <main>
       <h1>{name}</h1>
+      <Image
+        src="https://images.unsplash.com/photo-1517849845537-4d257902454a"
+        alt="A cute dog"
+        width={3024}
+        height={4032}
+        priority={true}
+        className=" w-48"
+        sizes="(max-width: 768px) 100vw,
+         (max-width: 1200px) 50vw,
+         400px"
+      />
     </main>
   );
 }
