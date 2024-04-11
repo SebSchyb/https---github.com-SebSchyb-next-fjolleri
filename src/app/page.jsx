@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadate = {
   title: "frontpage",
   description: "lorem ipsum dollar whatever whatever",
@@ -9,6 +11,7 @@ export default function Home() {
   return (
     <main>
       <h1>Hello world..</h1>
+      <Link href={"/henry"}>link test</Link>
     </main>
   );
 }
